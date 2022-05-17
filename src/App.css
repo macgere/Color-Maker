@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  color: aqua;
+  background-color: black;
+}
+
+.generatedColor {
+    display: flex;
+    background-color: azure;
+    color: azure;
+    height: 100px;
+    width: 100px;
+}
