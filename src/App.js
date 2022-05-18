@@ -112,5 +112,5 @@ const makePal = () => {
 //make the bg cute vvv
 
       let container = document.getElementById("app")
-      container.style.backgroundImage = `linear-gradient(to right, ${color1}, ${color5})`
+      container.style.backgroundImage = `linear-gradient(to top right, ${color1}, ${color2}, ${color3}, ${color4}, ${color5})`
 }
