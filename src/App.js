@@ -36,8 +36,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="container">
-          <button onClick={makePal}>Generate Color</button>
-          
+          <h2>generate harmonious, balanced color palettes</h2>
+          <button onClick={makePal}>click me</button>
           <div className="generatedColor" id="generatedColor1">
           <p className="colorName" id="colorName1"> Color is:</p>
           </div>
