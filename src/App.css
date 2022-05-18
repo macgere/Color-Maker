@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, #000000, #ffffff);
 }
 
 .App-logo {
@@ -9,10 +10,12 @@
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
+  margin: -30px;
 }
 
 .App-header {
-  background-color: #f77baf;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +28,9 @@ h2 {
 
 button {
   color: white;
-  background-color: black;
+  border-style: none;
+  box-shadow: -5px 10px 15px #424141;
+  background-color: #484848;
   border-radius: 12px;
   height: 200px;
   width: 200px;
@@ -37,13 +42,13 @@ button {
 .generatedColor {
     display: flex;
     flex-direction: column;
+    box-shadow: -5px 10px 15px #0000005a;
     align-items: center;
     justify-content: center;
     background-color: azure;
     color: azure;
     height: 200px;
     width: 200px;
-    margin-bottom: 15px;
     border-radius: 12px;
     margin: 20px;
 }

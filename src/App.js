@@ -33,9 +33,9 @@ const randTuple = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="app">
       <header className="App-header">
-        <div className="container">
+        <div className="container" id="container">
           <h2>generate harmonious, balanced color palettes</h2>
           <button onClick={makePal}>click me</button>
           <div className="generatedColor" id="generatedColor1">
@@ -86,18 +86,22 @@ const veryModifyColor = (hexcode) => {
 
 const makePal = () => {
       makeColor(1)
+
       let color1 = document.getElementById("colorName1").innerHTML
       let color2 =  modifyColor(color1)
       let newColor = document.getElementById("generatedColor2")
       newColor.style.backgroundColor = color2
       let colorName = document.getElementById("colorName2")
       colorName.innerHTML =`${color2}`
+
       let color3 = veryModifyColor(color1)
       let thirdColor = document.getElementById("generatedColor3")
       thirdColor.style.backgroundColor = color3
       let thirdColorName = document.getElementById("colorName3")
       thirdColorName.innerHTML = `${color3}`
+
       makeColor(4)
+
       let color4 = document.getElementById("colorName4").innerHTML
       let color5 = modifyColor(color4)
       let lastColor = document.getElementById("generatedColor5")
@@ -105,4 +109,8 @@ const makePal = () => {
       let lastColorName = document.getElementById("colorName5")
       lastColorName.innerHTML =  `${color5}`
 
+//make the bg cute vvv
+
+      let container = document.getElementById("app")
+      container.style.backgroundImage = `linear-gradient(to right, ${color1}, ${color5})`
 }
